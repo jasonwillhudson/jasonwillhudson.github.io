@@ -12,10 +12,6 @@ h2 {
     margin-bottom: 6rem
 }
 
-p {
-    padding-right: 4rem;
-    font-size: 1rem;
-}
 
 section {
     background-color: #F7F7F4
@@ -23,6 +19,12 @@ section {
 
 img {
     width: 100%;
+    height: auto;
     margin-bottom: 2rem
 }
 
+
+.img-ver{
+    height: 17rem;
+    width: auto;
+}
