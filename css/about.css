@@ -1,0 +1,13 @@
+.about{
+    position: relative;
+    top: 150px;
+}
+
+.border-l{
+    border-left: 12px #36312f solid;
+  
+}
+
+.border-l p{
+    margin-bottom: 0;
+}

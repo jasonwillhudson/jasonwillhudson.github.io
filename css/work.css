@@ -1,0 +1,61 @@
+.work {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.work-link {
+    color: #36312f;
+    font-size: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.work-link p {
+    font-size: 1.3rem;
+    color: #635850;
+}
+
+.work h3 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+.work-link .hover {
+    transition: all 0.1s ease-in-out;
+    position: relative;
+}
+
+.work-link .hover:before,
+.work-link .hover:after {
+    content: "";
+    position: absolute;
+    bottom: .9rem;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.1s ease-in;
+    transition-duration: 0.2s;
+    opacity: 0;
+    background-color: #36312f;
+}
+
+.work-link .hover.hover-1:before,
+.work-link .hover.hover-1:after {
+    left: 0;
+}
+
+.work-link:hover {
+    text-decoration: none;
+    color: #36312f;
+}
+
+.work-link:hover .hover:before,
+.work-link:hover .hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+
