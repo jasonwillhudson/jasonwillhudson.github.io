@@ -6,11 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="./css/main.css" rel="stylesheet">
-    <link href="./css/interaction.css" rel="stylesheet">
     <link href="./css/project-detail.css" rel="stylesheet">
-    <link href="./css/grid.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -19,19 +18,24 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="./index.html">Back to Home</a></li>
-                    <li><a href="./project-1.html">Project 1</a></li>
+    <nav class="navbar fixed-top navbar-expand-sm text-center">
+        <div class="container text-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">+</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Projects</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -44,43 +48,79 @@
 
             <h1 class="col-12 h1">Teen’s Suicide Prevention Education</h1>
             <h2 class="col-12 h2">Web Development/Visual Designs</h2>
-
-            <div class="col-sm-7">
-                <h3>Introduction</h3>
-                <p>This is a project from IAT 235 which is a course focuses on visual information design and fundamental knowledges of HTML and CSS. In this project, we are asked to choose an educational topic and make a website for it. The result should represent the information using icons or diagrams instead of text as much as possible.(Click the Image to See Website)</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Introduction</h3>
+                    <p>This is a project from IAT 235 which is a course focuses on visual information design and
+                        fundamental knowledges of HTML and CSS. In this project, we are asked to choose an educational
+                        topic and make a website for it. The result should represent the information using icons or
+                        diagrams instead of text as much as possible.(Click the Image to See Website)</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col img-hover">
+                    <a href="http://www.sfu.ca/~qla68/Final%20copy/index.html"><img src="./image/project/project-2.png"
+                            alt="project 1 img"></a>
+                </div>
             </div>
 
-            <div class="col-sm-5 img-hover">
-                <a href="http://www.sfu.ca/~qla68/Final%20copy/index.html"><img src="./image/project/project-2.png" alt="project 1 img"></a>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Before Programming</h3>
+                    <p>My main role in this project is icon design and programming(web developement). We chose to make a
+                        website to raise the attention from parents and educate them how to prevent their kids from
+                        suicide.
+                        Since the three key words for this topic are “Death”, “Warnings” and “Danger”, we decided to use
+                        red
+                        and black as primary colors, blue and yellow for contrast. Before the programming start, I
+                        designed
+                        the icons for the button refer to the content and data. </p>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col">
+                <img src="image/project/project-2/1.png" alt="image 1">
+                </div>
+                <div class="col-md-1"></div>
+
             </div>
 
-            <div class="col-sm-7">
-                <h3>Before Programming</h3>
-                <p>My main role in this project is icon design and programming(web developement). We chose to make a website to raise the attention from parents and educate them how to prevent their kids from suicide. Since the three key words for this topic are “Death”, “Warnings” and “Danger”, we decided to use red and black as primary colors, blue and yellow for contrast. Before the programming start, I designed the icons for the button refer to the content and data.  </p>
-            </div>
 
-
-            <img class="col-sm-4" src="image/project/project-2/1.png" alt="image 1">
-           
-           
-
-                <div class="col-sm-7">
+            <div class="row">
+                <div class="col-md-6">
                     <h3>Programming</h3>
 
-                    <p>This is the first programming class I took, so I did not have much knowledge on responsive design. I chose to use grid to arrange the text and images on the website since it is the only way I learned from the class. Without the knowledge of responsive design and to ensure the layout looks the same on mobile devices, I chose to use vw and vh as unit for the size of items such as font size and image width, which will keep the layout by shrinking or expanding depending on the width of the device.</p>
+                    <p>This is the first programming class I took, so I did not have much knowledge on responsive
+                        design. I
+                        chose to use grid to arrange the text and images on the website since it is the only way I
+                        learned
+                        from the class. Without the knowledge of responsive design and to ensure the layout looks the
+                        same
+                        on mobile devices, I chose to use vw and vh as unit for the size of items such as font size and
+                        image width, which will keep the layout by shrinking or expanding depending on the width of the
+                        device.</p>
                 </div>
-           
 
-            <img class="col-sm-3 long-img" src="image/project/project-2/2.png" alt="image 2">
-            <div class="col-sm-7 last up-3">
-                <h3>Reflection</h3>
-                <p>From this project, I learned how to effectively convey the information and data by using the combination of image, icon, diagram and text.  Most importantly, it gives me a full experience on building a website using the basic programming knowledges, which helps me to become more success in the future web development class.</p>
+                <div class="col-md-1"></div>
+            <div class="col">
+                <img src="image/project/project-2/2.png" alt="image 2">
+                </div>
+                <div class="col-md-2"></div>
             </div>
 
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Reflection</h3>
+                    <p>From this project, I learned how to effectively convey the information and data by using the
+                        combination of image, icon, diagram and text. Most importantly, it gives me a full experience on
+                        building a website using the basic programming knowledges, which helps me to become more success
+                        in
+                        the future web development class.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© Jason Liu 2020. All rights reserved.</p>
-    </footer>
-</body></html>
+</body>
+
+</html>
