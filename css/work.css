@@ -32,14 +32,15 @@
 .work-link .hover:after {
     content: "";
     position: absolute;
-    bottom: .9rem;
+    bottom: .5rem;
     width: 0px;
-    height: 2px;
+    height: 15px;
     margin: 5px 0 0;
     transition: all 0.1s ease-in;
     transition-duration: 0.2s;
     opacity: 0;
     background-color: #36312f;
+    opacity: .1;
 }
 
 .work-link .hover.hover-1:before,
@@ -55,7 +56,7 @@
 .work-link:hover .hover:before,
 .work-link:hover .hover:after {
     width: 100%;
-    opacity: 1;
+    opacity: .1;
 }
 
 

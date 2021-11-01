@@ -7,6 +7,8 @@
     transition: .3s linear;
     background-color: #f7f7f4;
     color: #36312f;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -84,4 +86,16 @@ em{
 
 .img-hover {
     overflow: hidden
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+.footer-text{
+    font-size: .7rem;
+    text-align: center;
 }
