@@ -31,3 +31,12 @@ img {
     height: 17rem;
     width: auto;
 }
+
+.v-p{
+    padding-bottom: 4rem;
+    text-align: left
+}
+
+iframe{
+    padding-bottom: 10rem;
+}
