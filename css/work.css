@@ -1,7 +1,8 @@
 .work {
     position: relative;
     text-align: center;
-    height: 100vh;
+    height: auto;
+    margin-top: 130px;
 }
 
 .work-link {
@@ -18,7 +19,7 @@
 }
 
 .work h3 {
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
