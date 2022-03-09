@@ -16,6 +16,10 @@ p{
     padding-bottom: 10rem;
 }
 
+.hint{
+    text-align: center;
+    font-size: 0.8rem;
+}
 section {
     background-color: #F7F7F4
 }
@@ -23,7 +27,13 @@ section {
 img {
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
     margin-bottom: 2rem
+}
+
+.img-gap{
+    padding-bottom: 10rem;
 }
 
 
