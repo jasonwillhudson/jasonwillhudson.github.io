@@ -1,28 +1,14 @@
-.work {
-    position: relative;
-    text-align: center;
-    height: auto;
-    margin-top: 130px;
-}
 
 .work-link {
     color: #36312f;
     font-size: 30px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 }
 
-.work-link p {
-    font-size: 1.3rem;
-    color: #635850;
+.work-link h3{
+    font-weight: 600;
+    font-size: 26px;
+    margin: 15px;
 }
-
-.work h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
 
 .work-link .hover {
     transition: all 0.1s ease-in-out;
@@ -35,7 +21,7 @@
     position: absolute;
     bottom: .5rem;
     width: 0px;
-    height: 15px;
+    height: 25px;
     margin: 5px 0 0;
     transition: all 0.1s ease-in;
     transition-duration: 0.2s;
@@ -57,7 +43,7 @@
 .work-link:hover .hover:before,
 .work-link:hover .hover:after {
     width: 100%;
-    opacity: .1;
+    opacity: .2;
 }
 
 

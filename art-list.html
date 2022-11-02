@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/work.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -20,16 +21,17 @@
 <body>
     <div class="home-container">
 
-        <div class="home-title">
-            <div class="home-name">
-                <h1>HELLO.</h1>
-                <h1> I AM JASON</h1>
-            </div>
-            <div class="home-subtitle">
-                <h2 id="changeSubject">Game</h2>
-                <h2 id="changeRole">Designer</h2>
-            </div>
-        </div>
+        <section style="display: flex; align-self: center; flex-direction: column; width: 100%; align-items: center;">
+
+            <a href="./projects-page/film/lophy.html" class="work-link">
+                <h3 class="hover hover-1">Undefined (Documentary)</h3>
+            </a>
+
+            <a href="./projects-page/film/doll.html" class="work-link">
+                <h3 class="hover hover-1">The Doll (Drama, Thriller)</h3>
+            </a>
+
+        </section>
 
         <div>
             <ul class="home-menu">
@@ -37,13 +39,17 @@
                     <h1 style="color: gray; font-size: 40px;">Projects</h1>
                 </li>
                 <li>
-                    <a href="./web-list.html">Website</a>
+                    <a href="web-list.html">Website</a>
                 </li>
                 <li>
                     <a href="app-list.html">Game/App</a>
                 </li>
-                <li>
-                    <a href="art-list.html">Film/Photography</a>
+                <li class="selected-li">
+                    <a style=" color: var(--black);font-weight: 600;" href="art-list.html">Film/Photography</a>
+                </li>
+                <li style="margin-top: 100%;">
+                    <a href="index.html" style="font-size: 20px; font-weight: 800; color: silver; float: right;">Jason
+                        Liu</a>
                 </li>
             </ul>
         </div>

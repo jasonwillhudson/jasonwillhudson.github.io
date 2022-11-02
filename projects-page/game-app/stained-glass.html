@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jason Liu Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/project-detail.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">+</span>
+
+            </button>
+
+            <p class="navbar-brand">Jason Liu</p>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../app-list.html">Back
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Detail Instruction -->
+
+    <section>
+        <div class="container">
+
+            <h1 class="col-12 h1">Stained Glass Filter</h1>
+            <h2 class="col-12 h2"> Eclipse / Java / Algorithm / Github</h2>
+
+            <p style="padding: 3px;">Github Link: <a
+                    href="https://github.com/leeummtee/stainedGlass">https://github.com/leeummtee/stainedGlass</a></p>
+            <h3>Overview</h3>
+            <p style="padding: 3px;">This project is a Stained Glass filter application that is used to break any image down into a number of
+                tiles (or cells), similar to that of stained glass windows in an old church. We implemented Quad
+                Tree filter and combine it with Voronoi Diagram to provide different outputs; With the former, the image is broken
+                down into a series of uniformly-coloured quads using a recursive function to build quad tree. In the
+                latter, the
+                image is broken down into a series of uniformly-coloured polygons. Each of these tiles have
+                borders that further distinguish one from another. 
+            </p>
+            <p style="padding: 3px;">Left Image: Quad Tree Filter | Right Image: Stained Glass Filter
+            </p>
+            <div class="row">
+                <img class="col-md-6" src="../../image/project/stained-glass/quad.png" alt="image 2">
+                <img class="col-md-6" src="../../image/project/stained-glass/voronoi.png" alt="image 2">
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
