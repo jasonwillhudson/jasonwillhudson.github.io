@@ -1,55 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     <title>Jason Portflio</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="./js/change-text.js"></script>
 
-</head>
+    <style>
+      .home-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--margin);
+      }
 
+      .button {
+        text-align: center;
+        display: inline-block;
+        padding: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
 
+      .button:hover {
+        color: gray;
+      }
 
-<body>
+      .project-list {
+        width: max-content;
+        text-align: center;
+      }
+
+      .project-item {
+        margin-bottom: var(--gap);
+      }
+
+      h3 {
+        margin-bottom: 12px;
+        color: black;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 35px;
+        opacity: 0.6;
+        color: black;
+        font-family: "Proxima Nova Lt";
+      }
+
+      a:hover {
+        opacity: 1;
+      }
+
+      .switch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about {
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="home-container">
+      <h1>Jason Liu</h1>
 
-        <div class="home-title">
-            <div class="home-name">
-                <h1>HELLO.</h1>
-                <h1> I AM JASON</h1>
-            </div>
-            <div class="home-subtitle">
-                <h2 id="changeSubject">Game</h2>
-                <h2 id="changeRole">Designer</h2>
-            </div>
+      <div class="nav-buttons">
+        <p class="button pj">Project</p>
+        <p class="button ab">About</p>
+      </div>
+
+      <!-----------------------Project Menu-->
+      <div class="switch-container">
+        <div class="project-list">
+          <div class="project-item">
+            <h3>Web Development</h3>
+            <a href="./projects-page/web/splittr.html">Bill Share</a>
+            <a href="./projects-page/web/svap.html">Svap Marketplace</a>
+            <a href="./projects-page/web/online-store.html"
+              >Lips&Lips Online Store</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h3>Java / SDE</h3>
+            <a href="./projects-page/game-app/flower.html"
+              >Flower Boutique Simulator</a
+            >
+            <a href="./projects-page/game-app/stained-glass.html"
+              >Stained Glass Filter</a
+            >
+            <a href="./projects-page/game-app/android.html"
+              >Diary Android App</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h3>Game / Unity</h3>
+            <a href="./projects-page/game-app/vr.html">Beyond The Ruin</a>
+            <a href="#">Last Light</a>
+          </div>
         </div>
-
-        <div>
-            <ul class="home-menu">
-                <li>
-                    <h1 style="color: gray; font-size: 40px;">Projects</h1>
-                </li>
-                <li>
-                    <a href="./web-list.html">Website</a>
-                </li>
-                <li>
-                    <a href="app-list.html">Game/App</a>
-                </li>
-                <li>
-                    <a href="art-list.html">Film/Photography</a>
-                </li>
-            </ul>
+        <div class="about">
+          </p>
+          <h2>Education - Simon Fraser University</h2>
+          <br>
+          <strong>2016-2018 Bachelor of Science</strong>
+          <p>Computer Science</p>
+          <strong>2018-2022 Bachelor of Science</strong>
+          <p>
+             Interactive Art and Technology, Interactive System
+            Concentration
+          </p>
+          <br>
+          <p>
+            <strong>Relevant Coursework: </strong> Algorithms, 3D Modeling, Software Engineering,
+            Web Development, UX/UI design
+          </p>
         </div>
-
+      </div>
     </div>
 
-</body>
-
+    <script>
+      var speed = 0;
+      $(".about").hide();
+      $(".about").css("width", $("h1").width() + "px");
+      $(".ab").click(function () {
+        $(".about").show();
+        $(".project-list").css("opacity", 0);
+        $(".project-list").hide();
+        $(".about").fadeTo(300, 1);
+      });
+      $(".pj").click(function () {
+        $(".project-list").show();
+        $(".about").css("opacity", 0);
+        $(".about").hide();
+        $(".project-list").fadeTo(300, 1);
+      });
+    </script>
+  </body>
 </html>

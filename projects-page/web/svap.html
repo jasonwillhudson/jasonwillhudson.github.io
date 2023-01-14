@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jason Liu Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../../css/main.css" rel="stylesheet" />
+    <link href="../../css/project-detail.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="../../index.html">Jason Liu</a>
+      <a href="../../index.html">Back to Home</a>
+    </nav>
+
+    <!-- Detail Instruction -->
+
+    <section>
+      <div class="container">
+        <h2>Svap Marketplace</h2>
+        <h3>
+          Full Stack Developer / PHP / Apache / MySQL / JavaScript (AJAX,
+          Jquery)
+        </h3>
+        <a
+          class="git-link"
+          href="https://github.com/jasonwillhudson/IAT-352-Final"
+          >GitHub Repo</a
+        >
+        <div class="split-wrap" style="height: 450px">
+          <video width="auto" height="100%" controls>
+            <source src="../../video/svap.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- Detail Instruction -->
+        <h4>About</h4>
+        <p>
+          Svap is a website based in the Greater Vancouver area for people to
+          trade items with others. Users are allowed to post the item they want
+          to trade and show others what kind of item they want to trade with.
+          Users can also browse through the posts on the site to find the item
+          they might be interested in trading with. Our website also has a
+          built-in chat that allows users to contact the traders by asking
+          questions and or arranging a meet up for trading.
+        </p>
+
+        <br />
+        <br />
+
+        <h4>My Contribution</h4>
+        <ul>
+          <li>
+            Developed all frontend in HTML and PHP and style the web page with
+            CSS
+          </li>
+          <li>Wrote SQL for CRUD operation in the database</li>
+          <li>
+            Completed all functions in PHP to send a response based on requests
+            received and data obtained
+          </li>
+          <li>
+            Cooperated with teammates to develop a web app for marketplace
+            platform
+          </li>
+        </ul>
+
+        <br />
+        <br />
+
+        <h4>ER Diagram</h4>
+
+        <img src="../../image/project/svap.jpg" alt="" />
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h4>Database Schema</h4>
+        <p>collection (collection_id, collector_id, post_id)<br />
+            image_path (email, post_id, image_path)<br />
+            member (email, name, password, phone, city)<br />
+            message (time_stamp, content, sender_email, message_id, reciver_id, status)<br />
+            post (email, post_id, title, description, date, category, value)<br />
+            want_to_trade (email, post_id, category) </p>
+      </div>
+    </section>
+  </body>
+</html>

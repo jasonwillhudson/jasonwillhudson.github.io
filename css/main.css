@@ -1,156 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap");
+@import url("./font/font.css");
 
 :root {
   --black: #36312f;
+  --margin: 40px;
+  --gap: 20px;
 }
 
 * {
   transition: 0.3s;
-}
-html {
-  box-sizing: border-box;
-  transition: 0.3s linear;
-  background-color: #f7f7f4;
-  color: #36312f;
-  margin: 0;
+  font-family: "Proxima Nova Rg";
   padding: 0;
+  margin: 0;
 }
 
-body {
-  font-family: "Cousine", monospace;
-  background: #f7f7f4;
-}
-
-h1 {
-  font-size: 100px;
-  font-weight: 700;
-  color: #36312f;
-}
-
-.h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #36312f;
-}
-h2 {
-  font-size: 30px;
-  text-align: center;
-  font-weight: 400;
-  padding: 10px;
-  animation: fade linear 2s infinite alternate;
-}
-
-.h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 400;
-  animation: none;
-}
-
-p {
-  font-size: 1rem;
-}
-
-em {
-  font-style: normal;
-  font-weight: 700;
-}
-
-.home-container {
-  height: 100vh;
-  display: flex;
-  width: 100vw;
-}
-
-.home-title {
-  padding: 80px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+body{
+  max-width: 1100px;
   margin: auto;
+  padding: 60px;
 }
 
-.home-name {
-  width: 300px;
+h1{
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  margin-bottom: var(--gap);
 }
 
-.home-subtitle {
-  display: flex;
+p, li, strong{
+  font-size: 18px;
+  line-height: 25px;
 }
 
-.home-menu {
-  background-color: var(--black);
-  height: 100%;
-  width: 100%;
-  padding: 30px;
-}
 
-.home-menu li {
-  list-style: none;
-  margin: 20px;
-}
-
-.home-menu a {
-  color: #f7f7f4;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0.7;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-nav {
-  background-color: #f7f7f4;
-}
-.nav-link {
-  color: #36312f;
-  border-bottom: 3px #36312f solid;
-  padding-bottom: 3px;
-}
-
-.nav-link:hover {
-  transform: translateY(6px);
-  color: #36312f;
-  padding-bottom: 10px;
-  transition: 0.3s ease-in;
-}
-
-.img-hover img:hover {
-  transform: scale(1.2);
-}
-
-.img-hover {
-  overflow: hidden;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding-top: 10px;
-}
-.footer-text {
-  font-size: 0.7rem;
-  text-align: center;
-}
-
-.selected-li {
-  background-color: white;
-  text-align: center;
-  padding: 16px;
-}
 

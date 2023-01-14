@@ -1,115 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Jason Liu Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="../../css/main.css" rel="stylesheet">
-    <link href="../../css/project-detail.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet" />
+    <link href="../../css/project-detail.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</head>
 
-<body>
+    <style>
+      .split-wrap {
+        height: 450px;
+      }
+    </style>
+  </head>
 
+  <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-sm">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">+</span>
-
-            </button>
-
-            <p class="navbar-brand">Jason Liu</p>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../app-list.html">Back
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+      <a href="../../index.html">Jason Liu</a>
+      <a href="../../index.html">Back to Home</a>
     </nav>
 
     <!-- Detail Instruction -->
 
     <section>
-        <div class="container">
+      <div class="container">
+        <h2>Beauty Diary</h2>
+        <h3>MySQL / Java / Android Studio</h3>
 
-            <h1 class="col-12 h1">Beauty Diary</h1>
-            <h2 class="col-12 h2"> SQLite / Java / Android Studio</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Introduction</h3>
-                    <p>The Beauty Diary is an app for users to write their beauty journeys such as losing weight, skincare
-                        and notes for the makeup. This app allows users to post their beauty journeys as moments, so that
-                        users can browse through the posts they posted to see the change and improvement from the past.
-                        Users can also search the posts with keywords to review the posts from the past and delete the ones
-                        that the user does not want to see again. In addition, the username and password help to make the
-                        journey private and safe.</p>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    <a href="../../video/BeautyDiary.apk" download>
-                        <img src="../../image/icon/apk.png" alt="apk">
-                    </a>
-                    <p class="hint">Click icon to download</p>
-                
-                </div>
-            </div>
+        <a class="git-link" href="../../video/BeautyDiary.apk" download>
+          Download APK
+        </a>
 
-            <!-------------------------Login /Register-->
-            <div class="row img-gap">
-                <div class="col-md-4">
-                    <h3>Login / Register</h3>
-                    <p class="p-0">User has to enter both username and password to view the diary they wrote, which helps to secure the privacy. If a user wants to change username and password, a secure code is required to make sure it's the correct person. </p>
+        <br />
+        <br />
 
-                </div>
+        <h4>Introduction</h4>
+        <p>
+          The Beauty Diary is an app for users to write their beauty journeys
+          such as losing weight, skincare and notes for the makeup. This app
+          allows users to post their beauty journeys as moments, so that users
+          can browse through the posts they posted to see the change and
+          improvement from the past. Users can also search the posts with
+          keywords to review the posts from the past and delete the ones that
+          the user does not want to see again. In addition, the username and
+          password help to make the journey private and safe.
+        </p>
 
+        <br />
+        <br />
+        <!-------------------------Login /Register-->
+        <h4>Login / Register</h4>
+        <p>
+          User has to enter both username and password to view the diary they
+          wrote, which helps to secure the privacy. If a user wants to change
+          username and password, a secure code is required to make sure it's the
+          correct person.
+        </p>
 
-                <div class="col-md-1"></div>
-
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/login.jpg" alt="image 2">
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/code.jpg" alt="image 2">
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/register.jpg" alt="image 2">
-
-
-            </div>
-
-            <div class="row img-gap">
-                <div class="col-md-4">
-                    <h3>Browse / New Post </h3>
-                    <p class="p-0">User can either press the "+" button or shake the phone to add a new post. In the post editing activity, user can type the paragraph in the text box. User is allowed to add photo to the post by taking a new photo from camera or choose existed ones from the gallery. When the post button clicked, the post will be posted to the moment page. On moment activity, user can swipe up and down to browse through the posts, or click on the image to see the full size of the photos. </p>
-                </div>
-
-                <div class="col-md-1"></div>
-
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/post.jpg" alt="image 2">
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/moment.jpg" alt="image 2">
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/detail.jpg" alt="image 2">
-            </div>
-
-            <div class="row img-gap">
-                <div class="col-md-4">
-                    <h3>Delete / Undo / Search </h3>
-                    <p class="p-0">When user wants delete a post, simply swipe left and click on delete. After the delete button is clicked, the system will pop up a snack bar with undo button for few seconds. If the undo is clicked, the post will be recovered to its original position, otherwise the data of the post will be deleted from the SQL database permanantly. To search for a post, clicked on the search button on the moment activity and enter the keyword. Then click on the seach </p>
-
-                </div>
-                <div class="col-md-1"></div>
-
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/delete.jpg" alt="image 2">
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/undo.jpg" alt="image 2">
-                <img class="col-md-2 p-0 m-1" src="../../image/BSscreenshot/search.jpg" alt="image 2">
-            </div>
-
+        <div class="split-wrap">
+          <img src="../../image/BSscreenshot/login.jpg" alt="image 2" />
+          <img src="../../image/BSscreenshot/code.jpg" alt="image 2" />
+          <img src="../../image/BSscreenshot/register.jpg" alt="image 2" />
         </div>
 
-    </section>
+        <br />
+        <br />
+        <br />
+        <br />
 
-</body></html>
+        <h4>Browse / New Post</h4>
+        <p>
+          User can either press the "+" button or shake the phone to add a new
+          post. In the post editing activity, user can type the paragraph in the
+          text box. User is allowed to add photo to the post by taking a new
+          photo from camera or choose existed ones from the gallery. When the
+          post button clicked, the post will be posted to the moment page. On
+          moment activity, user can swipe up and down to browse through the
+          posts, or click on the image to see the full size of the photos.
+        </p>
+
+        <div class="split-wrap">
+          <img src="../../image/BSscreenshot/post.jpg" alt="image 2" />
+          <img src="../../image/BSscreenshot/moment.jpg" alt="image 2" />
+          <img src="../../image/BSscreenshot/detail.jpg" alt="image 2" />
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h4>Delete / Undo / Search</h4>
+        <p>
+          When user wants delete a post, simply swipe left and click on delete.
+          After the delete button is clicked, the system will pop up a snack bar
+          with undo button for few seconds. If the undo is clicked, the post
+          will be recovered to its original position, otherwise the data of the
+          post will be deleted from the SQL database permanantly. To search for
+          a post, clicked on the search button on the moment activity and enter
+          the keyword. Then click on the seach
+        </p>
+
+        <div class="split-wrap">
+          <img src="../../image/BSscreenshot/delete.jpg" alt="image 2" />
+          <img src="../../image/BSscreenshot/undo.jpg" alt="image 2" />
+          <img src="../../image/BSscreenshot/search.jpg" alt="image 2" />
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+  </body>
+</html>
