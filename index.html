@@ -1,156 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <title>Jason Portflio</title>
 
     <link href="./css/main.css" rel="stylesheet" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <style>
       .home-container {
         display: flex;
-        align-items: center;
-        flex-direction: column;
         width: 100%;
       }
-      .nav-buttons {
-        display: flex;
-        justify-content: center;
-        margin-bottom: var(--margin);
+      .title {
+        width: -moz-fit-content;
+        width: fit-content;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
       }
 
-      .button {
-        text-align: center;
-        display: inline-block;
-        padding: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
-        cursor: pointer;
+      .title,
+      .menu {
+        padding: 70px;
+      }
+      .menu {
+        flex: 1;
+        padding-top: 45vh;
+        background-color: black;
+        min-height: 100vh;
+        color: white;
+        text-align: right;
       }
 
-      .button:hover {
-        color: gray;
+      .menu h3 {
+        margin-top: 60px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        -webkit-text-fill-color: black;
+        color: white;
+        font-size: 100px;
+        opacity: .3;
       }
 
-      .project-list {
-        width: max-content;
-        text-align: center;
-      }
-
-      .project-item {
-        margin-bottom: var(--gap);
-      }
-
-      h3 {
-        margin-bottom: 12px;
-        color: black;
-      }
-
-      a {
-        display: block;
+      .menu a {
+        font-size: 50px;
         text-decoration: none;
-        font-size: 20px;
-        line-height: 35px;
-        opacity: 0.6;
-        color: black;
-        font-family: "Proxima Nova Lt";
+        color: white;
+        display: block;
       }
 
-      a:hover {
-        opacity: 1;
-      }
-
-      .switch-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .about {
-        position: absolute;
+      .menu a:hover {
+        opacity: 0.5;
       }
     </style>
   </head>
 
   <body>
     <div class="home-container">
-      <h1>Jason Liu</h1>
+      <!-----------------------Title and Personal information-->
+      <div class="title">
+        <h1>Jason Liu</h1>
+        <h1>Portfolio</h1>
 
-      <div class="nav-buttons">
-        <p class="button pj">Project</p>
-        <p class="button ab">About</p>
+        <div class="social-media">
+          <i></i>
+          <a>jasonisinthehouse</a>
+        </div>
+
+        <div class="social-media">
+          <i></i>
+          <a>jsonbby</a>
+        </div>
       </div>
 
       <!-----------------------Project Menu-->
-      <div class="switch-container">
-        <div class="project-list">
-          <div class="project-item">
-            <h3>Web Development</h3>
-            <a href="./projects-page/web/splittr.html">Bill Share</a>
-            <a href="./projects-page/web/svap.html">Svap Marketplace</a>
-            <a href="./projects-page/web/online-store.html"
-              >Lips&Lips Online Store</a
-            >
-          </div>
+      <div class="menu">
+        <!-----------------------Web Projects-->
+        <h3>Web App</h3>
+        <a href="./projects-page/web/splittr.html">Bill Share</a>
+        <a href="./projects-page/web/svap.html">Svap Marketplace</a>
+        <a href="./projects-page/web/online-store.html"
+          >Lips&Lips Online Store</a
+        >
 
-          <div class="project-item">
-            <h3>Java / SDE</h3>
-            <a href="./projects-page/game-app/flower.html"
-              >Flower Boutique Simulator</a
-            >
-            <a href="./projects-page/game-app/stained-glass.html"
-              >Stained Glass Filter</a
-            >
-            <a href="./projects-page/game-app/android.html"
-              >Diary Android App</a
-            >
-          </div>
+        <!-----------------------Java Software Developement Projects-->
+        <h3>Java / SDE</h3>
+        <a href="./projects-page/game-app/flower.html"
+          >Flower Boutique Simulator</a
+        >
+        <a href="./projects-page/game-app/stained-glass.html"
+          >Stained Glass Filter</a
+        >
+        <a href="./projects-page/game-app/android.html">Diary Android App</a>
 
-          <div class="project-item">
-            <h3>Game / Unity</h3>
-            <a href="./projects-page/game-app/vr.html">Beyond The Ruin</a>
-            <a href="#">Last Light</a>
-          </div>
-        </div>
-        <div class="about">
-          </p>
-          <h2>Education - Simon Fraser University</h2>
-          <br>
-          <strong>2016-2018 Bachelor of Science</strong>
-          <p>Computer Science</p>
-          <strong>2018-2022 Bachelor of Science</strong>
-          <p>
-             Interactive Art and Technology, Interactive System
-            Concentration
-          </p>
-          <br>
-          <p>
-            <strong>Relevant Coursework: </strong> Algorithms, 3D Modeling, Software Engineering,
-            Web Development, UX/UI design
-          </p>
-        </div>
+        <!-----------------------Film Projects-->
+        <h3>Film</h3>
+        <a href="./projects-page/game-app/flower.html"
+          >Walk Into Lophy's Life</a
+        >
+        <a href="./projects-page/game-app/stained-glass.html">The Doll</a>
+
+        <!-----------------------Game/Unity Projects-->
+        <h3>Game / Unity</h3>
+        <a href="./projects-page/game-app/vr.html">Beyond The Ruin</a>
+        <a href="#">Last Light</a>
       </div>
     </div>
-
-    <script>
-      var speed = 0;
-      $(".about").hide();
-      $(".about").css("width", $("h1").width() + "px");
-      $(".ab").click(function () {
-        $(".about").show();
-        $(".project-list").css("opacity", 0);
-        $(".project-list").hide();
-        $(".about").fadeTo(300, 1);
-      });
-      $(".pj").click(function () {
-        $(".project-list").show();
-        $(".about").css("opacity", 0);
-        $(".about").hide();
-        $(".project-list").fadeTo(300, 1);
-      });
-    </script>
   </body>
 </html>
