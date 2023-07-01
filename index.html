@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <title>Jason Portflio</title>
 
-    <link href="./css/main.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="./css/main.css" rel="stylesheet" />
 
     <style>
       .home-container {
@@ -71,8 +71,11 @@
         margin-left: 10px;
       }
 
-      @media only screen and (max-width: 1070px) {
+      i {
+        font-size: 26px;
+      }
 
+      @media only screen and (max-width: 1070px) {
         .menu h3 {
           margin-top: 0;
           font-size: 30px;
@@ -104,6 +107,9 @@
         }
         .menu {
           text-align: left;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          z-index: 999;
         }
 
         .menu h3 {
@@ -132,14 +138,14 @@
         <h1>Portfolio</h1>
         <br />
         <div class="social-media">
-          <i class="fa fa-instagram" style="font-size: 26px"></i>
+          <i class="fa fa-instagram"></i>
           <a href="https://www.instagram.com/jasonisinthehouse/?hl=en"
             >jasonisinthehouse</a
           >
         </div>
 
         <div class="social-media">
-          <i class="fa fa-instagram" style="font-size: 26px"></i>
+          <i class="fa fa-instagram"></i>
           <a href="https://www.instagram.com/jsonbby/?hl=en">jsonbby</a>
         </div>
       </div>
