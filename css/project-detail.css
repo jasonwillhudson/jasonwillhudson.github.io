@@ -11,10 +11,6 @@ h2 {
   margin: 100px 230px;
 }
 
-section{
-  margin-bottom: 30px;
-}
-
 h3 {
   font-size: 23px;
   font-weight: 400;
@@ -110,6 +106,7 @@ iframe {
   .container {
     padding: 0 80px;
     margin: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -120,5 +117,6 @@ iframe {
   .container {
     padding: 20px;
     margin: 0;
+    margin-bottom: 70px;
   }
 }
