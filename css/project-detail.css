@@ -8,7 +8,7 @@ h2 {
 }
 
 .container {
-  margin: 100px 260px;
+  margin: 100px 230px;
 }
 
 h3 {
@@ -102,7 +102,14 @@ iframe {
   margin-bottom: var(--margin);
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 80px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   .container {
     padding: 20px;
     margin: 0;
