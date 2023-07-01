@@ -2,17 +2,13 @@ h2 {
   font-size: 50px;
   text-align: center;
   margin-bottom: var(--gap);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-top: 30px;
 }
 
 .container {
-  width: 800px;
-  margin: auto;
+  margin: 100px 260px;
 }
 
 h3 {
@@ -31,12 +27,13 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  padding: 20px;
 }
 
 nav a {
   text-decoration: none;
   font-weight: 700;
-  color: black;
+  color: var(--black);
   text-transform: uppercase;
 }
 
@@ -55,7 +52,7 @@ ul {
   font-size: 16px;
   padding: 12px 18px;
   background-color: var(--black);
-  color: white;
+  color: var(--white);
   border-radius: 5px;
   font-weight: 400;
   display: block;
@@ -85,14 +82,17 @@ li {
 .split-wrap {
   display: flex;
   width: 100%;
-  height: 180px;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 35px;
 }
 
-img, video {
-  height: 100%;
-  width: auto;
-  margin: 10px;
+video {
+  width: 100%;
+  height: auto;
+}
+
+img{
+  width: 95%;
 }
 
 iframe {
@@ -100,4 +100,11 @@ iframe {
   max-width: 100%;
   margin: auto;
   margin-bottom: var(--margin);
+}
+
+@media only screen and (max-width: 1070px) {
+  .container {
+    padding: 20px;
+    margin: 0;
+  }
 }

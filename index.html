@@ -6,6 +6,10 @@
     <title>Jason Portflio</title>
 
     <link href="./css/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <style>
       .home-container {
@@ -28,26 +32,26 @@
       .menu {
         flex: 1;
         padding-top: 45vh;
-        background-color: black;
+        background-color: var(--black);
         min-height: 100vh;
-        color: white;
+        color: var(--white);
         text-align: right;
       }
 
       .menu h3 {
         margin-top: 60px;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
-        -webkit-text-fill-color: black;
-        color: white;
-        font-size: 100px;
-        opacity: .3;
+        -webkit-text-stroke-color: var(--white);
+        -webkit-text-fill-color: var(--black);
+        color: var(--white);
+        font-size: 70px;
+        opacity: 0.3;
       }
 
       .menu a {
         font-size: 50px;
         text-decoration: none;
-        color: white;
+        color: var(--white);
         display: block;
       }
 
@@ -55,41 +59,49 @@
         opacity: 0.5;
       }
 
+      .social-media{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .social-media a{
+        margin-left: 10px;
+      }
+
       @media only screen and (max-width: 1070px) {
-
         .home-container {
-        flex-direction: column;
-        width: 100vw;
-      }
-      .title {
-        height: 60vh;
-      }
+          flex-direction: column;
+          width: 100vw;
+        }
+        .title {
+          height: 60vh;
+          position: relative;
+        }
 
-      .title,
-      .menu {
-        padding: 20px;
-      }
-      .menu {
-        text-align: left;
-        z-index: 999;
-      }
+        .title,
+        .menu {
+          padding: 20px;
+        }
+        .menu {
+          text-align: left;
+        }
 
-      .menu h3 {
-        margin-top: 0;
-        font-size: 40px;
-        margin-top: 30px;
-      }
+        .menu h3 {
+          margin-top: 0;
+          font-size: 40px;
+          margin-top: 30px;
+        }
 
-      h1{
-        font-size: 13vw;
-      }
+        h1 {
+          font-size: 13vw;
+        }
 
-      .menu a {
-        font-size: 20px;
-        margin-top: 15px;
+        .menu a {
+          font-size: 25px;
+          margin-top: 15px;
+        }
       }
- 
-}
     </style>
   </head>
 
@@ -99,15 +111,15 @@
       <div class="title">
         <h1>Jason Liu</h1>
         <h1>Portfolio</h1>
-
+        <br />
         <div class="social-media">
-          <i></i>
-          <a>jasonisinthehouse</a>
+          <i class="fa fa-instagram" style="font-size: 26px;"></i>
+          <a href="https://www.instagram.com/jasonisinthehouse/?hl=en">jasonisinthehouse</a>
         </div>
 
         <div class="social-media">
-          <i></i>
-          <a>jsonbby</a>
+          <i class="fa fa-instagram" style="font-size: 26px"></i>
+          <a href="https://www.instagram.com/jsonbby/?hl=en">jsonbby</a>
         </div>
       </div>
 
@@ -133,10 +145,8 @@
 
         <!-----------------------Film Projects-->
         <h3>Film</h3>
-        <a href="./projects-page/game-app/flower.html"
-          >Walk Into Lophy's Life</a
-        >
-        <a href="./projects-page/game-app/stained-glass.html">The Doll</a>
+        <a href="./projects-page/film/lophy.html">Walk Into Lophy's Life</a>
+        <a href="./projects-page/film/doll.html">The Doll</a>
 
         <!-----------------------Game/Unity Projects-->
         <h3>Game / Unity</h3>

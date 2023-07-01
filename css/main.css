@@ -1,16 +1,22 @@
 @import url("./font/font.css");
 
 :root {
-  --black: #36312f;
+  --black: #171717;
   --margin: 40px;
   --gap: 20px;
+  --white: #e6dfcf;
+  
 }
 
+body{
+  background-color: var(--white);
+}
 * {
   transition: 0.3s;
   font-family: "Proxima Nova Rg";
   padding: 0;
   margin: 0;
+  color: var(--black)
 }
 
 h1{
